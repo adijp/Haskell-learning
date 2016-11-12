@@ -1,0 +1,20 @@
+'a' has type Char
+"asjdfasdf" has type [Char] because it is a list of chars
+
+Printing: 
+	print: prints things with quotation marks around it and adds a new line
+	putStrLn: prints things without quotation marks and adds a new line
+	putStr: prints things without quotation marks but doesn't add a new line
+
+main :: IO () means main has type IO which stands for input/output
+IO is a special type used when the result of running the program involves effects in addition to being a function or expression 
+Printing to the screen is an effect, so printing the output of a module msut be wrapped in this IO type
+When you enter functions directly into the REPL, GHCi implicitly understands and implements IO without you having to specify that
+
+do allows for sequencing actions
+
+Often things are defined at the top level of a module so that they are available throughout the module
+Order of top-level definitions don't really matter
+Top-level declarations are not nested within anything else and they are in scope throughout the whole module
+
+When we need to refer to an infix operator in a position that is not infix - such as when we're using it in a prefix position or having it stand alone in order to query its type - we must put paranthesis around it
