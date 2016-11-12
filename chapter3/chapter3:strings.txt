@@ -18,3 +18,11 @@ Order of top-level definitions don't really matter
 Top-level declarations are not nested within anything else and they are in scope throughout the whole module
 
 When we need to refer to an infix operator in a position that is not infix - such as when we're using it in a prefix position or having it stand alone in order to query its type - we must put paranthesis around it
+
+head returns the first element of a list
+tail returns the list with the head chopped off
+take k list returns the first k elements of the list
+drop k list returns the last n-k elements of a list of length n 
+list !! k returns the kth element of a list and the list is 0 indexed
+
+
