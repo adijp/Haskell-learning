@@ -1,4 +1,0 @@
-The type constructor is the name of the type and is capitalized
-When one is reading or writing type signatues, the type names or type constructors are used
-Deriving Show allows the values of that type to be printed to the screen
-

@@ -1,0 +1,11 @@
+The type constructor is the name of the type and is capitalized
+When one is reading or writing type signatues, the type names or type constructors are used
+Deriving Show allows the values of that type to be printed to the screen
+The number of elements in a tuple is called it's arity
+Elements in a tuple can be of different types
+Tuples are product types i.e., one must supply both arguments to produce a value
+All constituents of a list must of the same type
+Unlike tuples, the number of constituents within a list can change as you operate on the list
+An empty tuple is called a unit
+Arity is the number of arguments a function accepts
+
