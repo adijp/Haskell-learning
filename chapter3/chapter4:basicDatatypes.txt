@@ -1,0 +1,28 @@
+The type constructor is the name of the type and is capitalized
+When one is reading or writing type signatues, the type names or type constructors are used
+Deriving Show allows the values of that type to be printed to the screen
+Integral numbers consist of two types 
+    Int: This type is a fixed precision integer i.e., it has a range, with a maximum and a minimum, and so 
+         it cannot be arbitrarily large or small
+    Integer: This type is also for integers, but this one supports arbitrarily large (or small) numbers. 
+
+Fractional numbers: 
+    Float: This type is used for single-precision floating point numbers. Fixed point number representations have immutable number of digits assigned for
+           the parts of the number before and after the decimal point. IN contrast, floating point can shift how many bits it uses to represent numbers
+           before or after the decimal point
+    Double: This is a double-precision floating point number which has twice as many bits with which to describe numbers as the Float type
+    Rational: This is a rational number that represents a ratio of two integers
+    Scientific: This is space efficient and almost arbitrary precision scientific number type. It's more efficient than rational numbers. 
+                It stores the coefficient as an Integer and the exponent as an Int. 
+
+All the above numeric datatypes have instances of a typeclass called Num. 
+The Num typeclass is what provides your standard (+), (-), and (*) operators along with few others. 
+Any type that has instance of Num can be used with those functions. 
+
+minBound and maxBound can be used to find the upper and lowerfound of an integer type. It is imported from GHC.Int
+One can always find out if a type has an instance of Bounded by asking GHCi for the type :info for that type. 
+Num is a superclass of Fractional. So (+) and other functions from the Num typeclass can be used with Fractional numbers, but the functions 
+from the Fractional typeclass cannot be used with all types that have a Num instance. 
+
+Fractional values default to floating point type Double
+
