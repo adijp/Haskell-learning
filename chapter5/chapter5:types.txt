@@ -1,0 +1,14 @@
+Infix operator associates to the right while function application is left associative
+Each typeclass offers a standard set of functions that can be used across several concrete types
+One can often force a polymorhphic type variable to a concrete type variable by adding :: followed by the name of the concret type
+eg: type of 13 is Num which is a polymorphic type, but type of 13::Integer is Integer (Concrete type)
+
+A type system defines the associations between different parts of a program and checks that all the parts fit together in 
+a logically consistent, provably correct way. 
+
+Typechecking occurs at compile time. 
+
+Good type systems can also enable compiler optimizations, because the compiler can know and predict certain things about the 
+execution of a program based on the types. 
+
+
